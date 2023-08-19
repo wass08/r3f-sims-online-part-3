@@ -66,12 +66,12 @@ export function AnimatedWoman({
     } else {
       setAnimation("CharacterArmature|Idle");
     }
-    // if (id === user) {
-    //   state.camera.position.x = group.current.position.x + 8;
-    //   state.camera.position.y = group.current.position.y + 8;
-    //   state.camera.position.z = group.current.position.z + 8;
-    //   state.camera.lookAt(group.current.position);
-    // }
+    if (id === user) {
+      state.camera.position.x = group.current.position.x + 8;
+      state.camera.position.y = group.current.position.y + 8;
+      state.camera.position.z = group.current.position.z + 8;
+      state.camera.lookAt(group.current.position);
+    }
   });
 
   return (
